@@ -3,6 +3,13 @@
     <fe-button>Button</fe-button>
     <fe-spacer />
     <temp />
+    <fe-spacer />
+    <fe-button>
+      <div class="icon_box">
+        <fect-icon icon="aperture" />
+        标签按钮
+      </div>
+    </fe-button>
   </div>
 </template>
 
@@ -15,3 +22,11 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.icon_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>

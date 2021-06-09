@@ -908,6 +908,16 @@
   resolved "https://registry.yarnpkg.com/@fect-ui/themes/-/themes-1.0.8.tgz#92051690abc4271ee6608cc237df35e4a22fa6ea"
   integrity sha512-P9x6rTbWZWH+aLk2fgqkWndQAeGlDbVOj+NfKBl5bPNBR2u1sQTPXCKOQZxdf0BSZadZtMZfaMXa5mrOSwi+gA==
 
+"@fect-ui/vue-icons@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@fect-ui/vue-icons/-/vue-icons-0.1.2.tgz#d7cde0b24978fba208725a107e56b489542d7b17"
+  integrity sha512-eiXoCFSUZxDcFD5pOHvUXqLweuSeUcxzh8BLk2b6crFUUM9ySRosqFV+nIsM88Aok/zFpx8rjW7oPtrGj4/lSw==
+  dependencies:
+    core-js "^3.6.5"
+    vue "^3.0.0"
+    vue-class-component "^8.0.0-0"
+    vue-router "^4.0.0-0"
+
 "@fect-ui/vue@0.1.0-alpha.4":
   version "0.1.0-alpha.4"
   resolved "https://registry.yarnpkg.com/@fect-ui/vue/-/vue-0.1.0-alpha.4.tgz#9a77a70495724d51255eab405573095ed0381d15"
@@ -1454,6 +1464,11 @@
     vue-template-es2015-compiler "^1.9.0"
   optionalDependencies:
     prettier "^1.18.2"
+
+"@vue/devtools-api@^6.0.0-beta.10":
+  version "6.0.0-beta.14"
+  resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-6.0.0-beta.14.tgz#6ed2d6f8d66a9256c9ad04bfff08309ba87b9723"
+  integrity sha512-44fPrrN1cqcs6bFkT0C+yxTM6PZXLbR+ESh1U1j8UD22yO04gXvxH62HApMjLbS3WqJO/iCNC+CYT+evPQh2EQ==
 
 "@vue/preload-webpack-plugin@^1.1.0":
   version "1.1.2"
@@ -8270,6 +8285,11 @@ vm-browserify@^1.0.1:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
 
+vue-class-component@^8.0.0-0:
+  version "8.0.0-rc.1"
+  resolved "https://registry.yarnpkg.com/vue-class-component/-/vue-class-component-8.0.0-rc.1.tgz#db692cd97656eb9a08206c03d0b7398cdb1d9420"
+  integrity sha512-w1nMzsT/UdbDAXKqhwTmSoyuJzUXKrxLE77PCFVuC6syr8acdFDAq116xgvZh9UCuV0h+rlCtxXolr3Hi3HyPQ==
+
 vue-eslint-parser@^7.6.0:
   version "7.6.0"
   resolved "https://registry.yarnpkg.com/vue-eslint-parser/-/vue-eslint-parser-7.6.0.tgz#01ea1a2932f581ff244336565d712801f8f72561"
@@ -8306,6 +8326,13 @@ vue-loader@^15.9.2:
     loader-utils "^1.1.0"
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
+
+vue-router@^4.0.0-0:
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-4.0.8.tgz#55d4290a3122444edbc91a3cd2492bb1d0cef494"
+  integrity sha512-42mWSQaH7CCBQDspQTHv63f34VEnZC20g9QNK4WJ/zW8SdIUeT6TQ2i/78fjF/pVBUPLBWrGhvB7uDnaz7O/pA==
+  dependencies:
+    "@vue/devtools-api" "^6.0.0-beta.10"
 
 vue-style-loader@^4.1.0, vue-style-loader@^4.1.2:
   version "4.1.3"
