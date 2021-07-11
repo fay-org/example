@@ -6,7 +6,7 @@ module.exports = {
       'import',
       {
         libraryName: '@fect-ui/vue',
-        libraryDirectory: 'lib',
+        libraryDirectory: 'es',
         style: (name) => `${name}/index.css`,
       },
     ],

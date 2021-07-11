@@ -1,24 +1,27 @@
 <template>
   <div>
-    <fe-button>Button</fe-button>
-    <fe-spacer />
     <temp />
     <fe-spacer />
-    <fe-button>
-      <div class="icon_box">
-        <fect-icon icon="aperture" />
-        标签按钮
-      </div>
-    </fe-button>
+    <github />
+    <activity size="23" />
+    <fe-avatar text="888" />
+    <fe-button>Buton Test</fe-button>
   </div>
 </template>
 
 <script>
 import Temp from './components/Temp'
+import { github, activity } from '@fect-ui/vue-icons'
+import { Avatar, Button, Spacer } from '@fect-ui/vue'
 
 export default {
   components: {
     Temp,
+    github,
+    activity,
+    [Avatar.name]: Avatar,
+    [Button.name]: Button,
+    [Spacer.name]: Spacer,
   },
 }
 </script>
@@ -26,7 +29,7 @@ export default {
 <style scoped>
 .icon_box {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 </style>

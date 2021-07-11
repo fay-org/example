@@ -1,29 +1,35 @@
 <template>
   <fe-button>按钮1</fe-button>
-  <Spacer />
+  <fe-spacer />
   <fe-button>按钮2</fe-button>
-  <Spacer />
-  <fe-button>
-    <div class="icon_box">
-      <aperture-icon />带图标的按钮
-    </div>
+  <fe-spacer />
+  <fe-button @click="handleClick">
+    <div class="icon_box"><aperture />带图标的按钮</div>
   </fe-button>
+  <fe-modal title="Hello Vite" v-model:visible="show" />
 </template>
 
 <script>
-import {defineComponent} from 'vue'
-import { Button, Spacer } from '@fect-ui/vue'
-import {aperture} from '@fect-ui/vue-icons'
-import '@fect-ui/vue/lib/Button/index.css'
-import '@fect-ui/vue/lib/spacer/index.css'
+import { defineComponent, ref } from 'vue'
+import { Button, Modal, Spacer } from '@fect-ui/vue'
+import { aperture } from '@fect-ui/vue-icons'
 
 export default defineComponent({
   name: 'App',
   components: {
-    'fe-button': Button,
-    Spacer,
-    'aperture-icon': aperture
-  }
+    [Button.name]: Button,
+    [Spacer.name]: Spacer,
+    [Modal.name]: Modal,
+    aperture,
+  },
+  setup() {
+    const show = ref(false)
+    const handleClick = () => (show.value = !show.value)
+    return {
+      show,
+      handleClick,
+    }
+  },
 })
 </script>
 
