@@ -10,27 +10,27 @@
 </template>
 
 <script>
-import { defineComponent, ref } from 'vue'
-import { Button, Modal, Spacer } from '@fect-ui/vue'
-import { aperture } from '@fect-ui/vue-icons'
+import { defineComponent, ref } from "vue";
+import { Button, Modal, Spacer } from "@fect-ui/vue";
+import { Activity } from "@fect-ui/vue-icons";
 
 export default defineComponent({
-  name: 'App',
+  name: "App",
   components: {
     [Button.name]: Button,
     [Spacer.name]: Spacer,
     [Modal.name]: Modal,
-    aperture,
+    Activity,
   },
   setup() {
-    const show = ref(false)
-    const handleClick = () => (show.value = !show.value)
+    const show = ref(false);
+    const handleClick = () => (show.value = !show.value);
     return {
       show,
       handleClick,
-    }
+    };
   },
-})
+});
 </script>
 
 <style scoped>

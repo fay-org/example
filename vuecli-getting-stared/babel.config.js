@@ -1,14 +1,14 @@
 module.exports = {
-  presets: ['@vue/cli-plugin-babel/preset'],
+  presets: ["@vue/cli-plugin-babel/preset"],
   plugins: [
-    '@vue/babel-plugin-jsx',
+    "@vue/babel-plugin-jsx",
     [
-      'import',
+      "import",
       {
-        libraryName: '@fect-ui/vue',
-        libraryDirectory: 'es',
-        style: (name) => `${name}/index.css`,
+        libraryName: "@fect-ui/vue",
+        libraryDirectory: "lib",
+        style: (name) => `${name}/style/index`,
       },
     ],
   ],
-}
+};

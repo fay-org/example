@@ -1,6 +1,6 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import styleImport from 'vite-plugin-style-import'
+import { defineConfig } from "vite";
+import vue from "@vitejs/plugin-vue";
+import styleImport from "vite-plugin-style-import";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -9,9 +9,9 @@ export default defineConfig({
     styleImport({
       libs: [
         {
-          libraryName: '@fect-ui/vue',
+          libraryName: "@fect-ui/vue",
           esModule: true,
-          resolveStyle: (name) => `@fect-ui/vue/es/${name}/index.css`,
+          resolveStyle: (name) => `@fect-ui/vue/es/${name}/style`,
         },
       ],
     }),
@@ -20,4 +20,4 @@ export default defineConfig({
   server: {
     port: 4000,
   },
-})
+});

@@ -1,29 +1,26 @@
 <template>
   <div>
-    <temp />
+    <Github />
     <fe-spacer />
-    <github />
-    <activity size="23" />
     <fe-avatar text="888" />
-    <fe-button>Buton Test</fe-button>
+    <fe-spacer />
+    <fe-button loading>Buton Test</fe-button>
+    <fe-spacer />
   </div>
 </template>
 
 <script>
-import Temp from './components/Temp'
-import { github, activity } from '@fect-ui/vue-icons'
-import { Avatar, Button, Spacer } from '@fect-ui/vue'
+import { Github } from "@fect-ui/vue-icons";
+import { Avatar, Button, Spacer } from "@fect-ui/vue";
 
 export default {
   components: {
-    Temp,
-    github,
-    activity,
+    Github,
     [Avatar.name]: Avatar,
     [Button.name]: Button,
     [Spacer.name]: Spacer,
   },
-}
+};
 </script>
 
 <style scoped>
