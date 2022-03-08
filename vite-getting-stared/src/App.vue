@@ -1,7 +1,7 @@
 <template>
   <fe-button>按钮1</fe-button>
   <fe-spacer />
-  <fe-button>按钮2</fe-button>
+  <fe-button loading></fe-button>
   <fe-spacer />
   <fe-button @click="handleClick">
     <div class="icon_box"><aperture />带图标的按钮</div>
@@ -10,12 +10,12 @@
 </template>
 
 <script>
-import { defineComponent, ref } from "vue";
-import { Button, Modal, Spacer } from "@fect-ui/vue";
-import { Activity } from "@fect-ui/vue-icons";
+import { defineComponent, ref } from 'vue'
+import { Button, Modal, Spacer } from '@fect-ui/vue'
+import { Activity } from '@fect-ui/vue-icons'
 
 export default defineComponent({
-  name: "App",
+  name: 'App',
   components: {
     [Button.name]: Button,
     [Spacer.name]: Spacer,
@@ -23,14 +23,14 @@ export default defineComponent({
     Activity,
   },
   setup() {
-    const show = ref(false);
-    const handleClick = () => (show.value = !show.value);
+    const show = ref(false)
+    const handleClick = () => (show.value = !show.value)
     return {
       show,
       handleClick,
-    };
+    }
   },
-});
+})
 </script>
 
 <style scoped>

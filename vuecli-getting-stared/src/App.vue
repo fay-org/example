@@ -2,16 +2,16 @@
   <div>
     <Github />
     <fe-spacer />
-    <fe-avatar text="888" />
+    <fe-avatar text="Avatar" />
     <fe-spacer />
-    <fe-button loading>Buton Test</fe-button>
+    <fe-button loading />
     <fe-spacer />
   </div>
 </template>
 
 <script>
-import { Github } from "@fect-ui/vue-icons";
-import { Avatar, Button, Spacer } from "@fect-ui/vue";
+import { Github } from '@fect-ui/vue-icons'
+import { Avatar, Button, Spacer } from '@fect-ui/vue'
 
 export default {
   components: {
@@ -20,7 +20,7 @@ export default {
     [Button.name]: Button,
     [Spacer.name]: Spacer,
   },
-};
+}
 </script>
 
 <style scoped>
